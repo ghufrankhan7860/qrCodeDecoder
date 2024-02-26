@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',arial,'sans-serif';
+    background-color: rgb(0, 22, 79);
+}
+
+
+#headingQR{
+    width: 550px;
+    padding: 10px;
+    text-align: center;
+    margin: 30px auto 10px auto;
+    font-size: 65px;
+    color: white;
+    border: 3px dashed white;
+    border-radius: 30px;
+}
+
+form{
+    margin: 10px auto 10px auto;
+    width: 80vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid whitesmoke;
+    border-radius: 25px;
+    background-color: rgb(37, 55, 101)
+}
+
+label{
+    /* width: 100%; */
+    text-align:center;
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 800;
+    /* background-color: #000000; */
+    color: rgb(0, 255, 102);
+    border-radius: 25px;
+}
+
+input{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Add Image';
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top,rgb(0, 255, 102), #000000);
+
+  }
+
+
+button{
+    width: 200px;
+    height: 65px;
+    font-size: 32px;
+    color: rgb(0, 40, 89);
+    border: 2px solid rgb(71, 71, 174);
+    border-radius: 20px;
+    background-color: rgb(95, 120, 182);
+    border: 2px solid white;
+}
+button:hover{
+    background-color: white;
+}

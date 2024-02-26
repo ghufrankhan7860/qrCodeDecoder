@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRDecoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="headingQR">QR Code Reader</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="imageInput">Upload QR </label>
+        <input class="custom-file-input" type="file" id="imageInput" name="image" accept="image/*" onchange="displayFileName()">
+        <button type="submit" >Read QR</button>
+    </form>
+
+
+    <script>
+        function displayFileName() {
+            const fileInput = document.getElementById('customFileInput');
+            const fileNameDisplay = document.getElementById('fileNameDisplay');
+            fileNameDisplay.textContent = fileInput.files[0].name;
+        }
+    </script>
+</body>
+</html>
